@@ -3,17 +3,13 @@ name: Run tests
 on: [push]
 
 jobs:
-  check-bats-version:
+  test:
     runs-on: ubuntu-latest
-    steps:
-      - run: echo "this is pen"
 
-# jobs:
-#   test:
-#     steps:
-#       - uses: actions/checkout@v2
-#       - uses: julia-actions/setup-julia@v1
-#       - uses: julia-actions/julia-buildpkg@v1
-#       - uses: julia-actions/julia-runtest@v1
-#         with:
-#           annotate: true
+    steps:
+      - uses: actions/checkout@v2
+      - uses: julia-actions/setup-julia@v1
+      - uses: julia-actions/julia-buildpkg@v1
+      - uses: julia-actions/julia-runtest@v1
+        with:
+          annotate: true

@@ -4,9 +4,9 @@ module TestCalculate
     include("calculate.jl")
 
     function main()
-        @testset "add" begin
-            @test Calculate.add(1, 2) == 3
-            @test Calculate.add(2, 3) == 5
+        @testset "plus" begin
+            @test Calculate.plus(1, 2) == 3
+            @test Calculate.plus(2, 3) == 5
         end
     end
 end

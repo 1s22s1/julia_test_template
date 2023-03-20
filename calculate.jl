@@ -1,5 +1,5 @@
 module Calculate
-    function add(m, n)
+    function plus(m, n)
         return m + n
     end
 end

@@ -1,14 +1,14 @@
 module TestCalculate
-    using Test
+using Test
 
-    include("calculate.jl")
+include("calculate.jl")
 
-    function main()
-        @testset "plus" begin
-            @test Calculate.plus(1, 2) == 3
-            @test Calculate.plus(2, 3) == 5
-        end
+function main()
+    @testset "plus" begin
+        @test Calculate.plus(1, 2) == 3
+        @test Calculate.plus(2, 3) == 5
     end
+end
 end
 
 if abspath(PROGRAM_FILE) == @__FILE__

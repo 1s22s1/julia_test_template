@@ -1,7 +1,7 @@
 module Calculate
-    function plus(m, n)
-        return m + n
-    end
+function plus(m, n)
+    return m + n
+end
 end
 
 if abspath(PROGRAM_FILE) == @__FILE__
